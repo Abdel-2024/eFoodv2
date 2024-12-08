@@ -301,6 +301,9 @@ namespace eFood.Application.Services
             return resultToReturn;
         }
 
-     
+        public Task<AppsResult<ProductsDTO>> GetOneProduct(int Id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
