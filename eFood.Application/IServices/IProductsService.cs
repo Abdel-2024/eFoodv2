@@ -11,7 +11,9 @@ namespace eFood.Application.IServices
     public interface IProductsService
     {
         Task<AppsListResult<ProductsDTO>> GetAllProducts();  
-        Task<AppsListResult<ProductsDTO>> GetAllFilterProducts(ProductsFilterDTO filter); 
+        Task<AppsListResult<ProductsDTO>> GetAllFilterProducts(ProductsFilterDTO filter);
+
+        Task<AppsResult<ProductsDTO>> GetOneProduct(int Id);
 
         Task<AppsResult<ProductsDTO>> AddProduct(ProductsCreateDTO product);
         Task<AppsResult<ProductsDTO>> UpdateProduct(ProductsCreateDTO product, int Id); 
