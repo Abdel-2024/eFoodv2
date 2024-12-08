@@ -319,7 +319,11 @@ namespace eFood.Application.Services
 
         public Task<AppsListResult<ProductsDTO>> GetSomeProducts()
         {
-            throw new NotImplementedException();
+            var result = await _repo.GetAll<Products>();
+
+            var resultToReturn = _mapper.Map<AppsListResult<ProductsDTO>>(result);
+
+            return resultToReturn;
         }
     }
 }
