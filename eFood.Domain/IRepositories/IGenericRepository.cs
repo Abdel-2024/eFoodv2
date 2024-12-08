@@ -13,6 +13,7 @@ namespace eFood.Domain.IRepositories
     public interface IGenericRepository
     {
         Task<AppsListResult<T>> GetAll<T>() where T : class;
+        
         Task<AppsListResult<T>> GetAll<T,U>() where T : class where U : class;
         Task<AppsListResult<T>> GetAll<T>(Pagination pagination,
                                         Expression<Func<T, bool>> search,
