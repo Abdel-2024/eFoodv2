@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.Application", "eFood.Application\eFood.Application.csproj", "{0308F480-E1CF-4FE8-B405-33C2D0A093D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.Persistence", "eFood.Persistence\eFood.Persistence.csproj", "{2CBA2B6D-17FC-4E5F-8C72-3940B0D7EAA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.Infra.IoC", "eFood.Infra.IoC\eFood.Infra.IoC.csproj", "{EFD70F7B-C85D-4EBE-950C-FDA8142495EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.Infra.Email", "eFood.Infra.Email\eFood.Infra.Email.csproj", "{8A0CC0CA-814F-4F8D-AA03-92362DB30485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.Storage", "eFood.Storage\eFood.Storage.csproj", "{5C5871A6-C519-428E-8DE3-35FBBA2BA5A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.WebAPI", "WebAPI-eFood\eFood.WebAPI.csproj", "{A4AF824A-5169-48D3-B032-332A1CD58AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFood.Domain", "eFood.Domain\eFood.Domain.csproj", "{671C0A6F-5105-4E39-A036-B7195A53994C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0308F480-E1CF-4FE8-B405-33C2D0A093D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0308F480-E1CF-4FE8-B405-33C2D0A093D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0308F480-E1CF-4FE8-B405-33C2D0A093D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0308F480-E1CF-4FE8-B405-33C2D0A093D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBA2B6D-17FC-4E5F-8C72-3940B0D7EAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBA2B6D-17FC-4E5F-8C72-3940B0D7EAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBA2B6D-17FC-4E5F-8C72-3940B0D7EAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBA2B6D-17FC-4E5F-8C72-3940B0D7EAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD70F7B-C85D-4EBE-950C-FDA8142495EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD70F7B-C85D-4EBE-950C-FDA8142495EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD70F7B-C85D-4EBE-950C-FDA8142495EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD70F7B-C85D-4EBE-950C-FDA8142495EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0CC0CA-814F-4F8D-AA03-92362DB30485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0CC0CA-814F-4F8D-AA03-92362DB30485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0CC0CA-814F-4F8D-AA03-92362DB30485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0CC0CA-814F-4F8D-AA03-92362DB30485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5871A6-C519-428E-8DE3-35FBBA2BA5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5871A6-C519-428E-8DE3-35FBBA2BA5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5871A6-C519-428E-8DE3-35FBBA2BA5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5871A6-C519-428E-8DE3-35FBBA2BA5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AF824A-5169-48D3-B032-332A1CD58AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AF824A-5169-48D3-B032-332A1CD58AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AF824A-5169-48D3-B032-332A1CD58AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AF824A-5169-48D3-B032-332A1CD58AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671C0A6F-5105-4E39-A036-B7195A53994C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671C0A6F-5105-4E39-A036-B7195A53994C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671C0A6F-5105-4E39-A036-B7195A53994C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671C0A6F-5105-4E39-A036-B7195A53994C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA6A1FFF-6CBC-462E-BA22-15AC88F48D3C}
+	EndGlobalSection
+EndGlobal
