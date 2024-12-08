@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\CategoryProduct\" />
+    <Folder Include="DTOs\CategoryOption\" />
+    <Folder Include="DTOs\ProductsOptions\" />
+    <Folder Include="DTOs\Options\" />
+    <Folder Include="DTOs\Products\" />
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="5.0.27" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+	<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eFood.Domain\eFood.Domain.csproj" />
+    <ProjectReference Include="..\eFood.Storage\eFood.Storage.csproj" />
+  </ItemGroup>
+
+</Project>
