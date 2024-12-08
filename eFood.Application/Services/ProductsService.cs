@@ -316,5 +316,10 @@ namespace eFood.Application.Services
 
             return resultToReturn;
         }
+
+        public Task<AppsListResult<ProductsDTO>> GetSomeProducts()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
