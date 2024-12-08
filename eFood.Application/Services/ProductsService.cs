@@ -301,6 +301,20 @@ namespace eFood.Application.Services
             return resultToReturn;
         }
 
-     
+        public async Task<AppsResult<ProductsDTO>> GetOneProduct(int Id)
+        {
+            var result = await _repo.GetOne<Products>(Id);
+
+            if (!result.Success)
+            {
+                return _mapper.Map<AppsResult<ProductsDTO>>(result);
+            }
+
+            var deletingItem = await _repo.DeleteItem<Products>(result.Entity);
+
+            var resultToReturn = _mapper.Map<AppsResult<ProductsDTO>>(deletingItem);
+
+            return resultToReturn;
+        }
     }
 }
