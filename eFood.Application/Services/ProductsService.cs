@@ -60,9 +60,11 @@ namespace eFood.Application.Services
                 try
                 {
                     AppsResult<Products> resultProduct;
+
                     AppsListResult<ProductsOptions> resultPrdOpt;   
 
                     _unitOfwork.Add<Products>(product);
+                    
                     _unitOfwork.SaveChanges<Products>(product, out resultProduct);
 
                     if (!resultProduct.Success)
