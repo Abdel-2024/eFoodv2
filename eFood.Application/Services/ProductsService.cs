@@ -24,7 +24,9 @@ namespace eFood.Application.Services
         private readonly IGenericRepository _repo;
         private readonly IUnitOfWork _unitOfwork;   
         private readonly IWebHostEnvironment _env;
+
         private readonly IMapper _mapper;
+
         private readonly IFileStorageService _storage;
         private SqlConnection _connection; 
         private string containerName = "Products";
