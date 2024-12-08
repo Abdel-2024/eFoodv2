@@ -9,8 +9,7 @@ namespace eFood.Domain.IRepositories
 {
     public interface ICategoryRepository
     {
-        Category GetParentCategory(int Id);
-        
+        Category GetParentCategory(int Id);        
         Category AddPlusCategory();
     }
 }
