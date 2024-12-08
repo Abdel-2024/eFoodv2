@@ -15,6 +15,8 @@ namespace eFood.Application.IServices
 
         Task<AppsResult<ProductsDTO>> GetOneProduct(int Id);
 
+        Task<AppsListResult<ProductsDTO>> GetSomeProducts();
+
         Task<AppsResult<ProductsDTO>> AddProduct(ProductsCreateDTO product);
         Task<AppsResult<ProductsDTO>> UpdateProduct(ProductsCreateDTO product, int Id); 
         Task<AppsResult<ProductsDTO>> DeleteProduct(int Id);    
