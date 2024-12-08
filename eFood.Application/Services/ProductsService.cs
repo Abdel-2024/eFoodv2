@@ -22,9 +22,7 @@ namespace eFood.Application.Services
     public class ProductsService : IProductsService
     {
         private readonly IGenericRepository _repo;
-
         private readonly IUnitOfWork _unitOfwork; 
-        
         private readonly IWebHostEnvironment _env;
 
         private readonly IMapper _mapper;
@@ -62,9 +60,11 @@ namespace eFood.Application.Services
                 try
                 {
                     AppsResult<Products> resultProduct;
+
                     AppsListResult<ProductsOptions> resultPrdOpt;   
 
                     _unitOfwork.Add<Products>(product);
+                    
                     _unitOfwork.SaveChanges<Products>(product, out resultProduct);
 
                     if (!resultProduct.Success)
